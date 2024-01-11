@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dev.ancaghenade.shipmentlistdemo.integrationtests.ShipmentServiceIntegration
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.431 s - in dev.ancaghenade.shipmentlistdemo.integrationtests.ShipmentServiceIntegration

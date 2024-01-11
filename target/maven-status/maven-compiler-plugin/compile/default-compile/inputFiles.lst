@@ -1,0 +1,16 @@
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/entity/Shipment.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/config/AmazonS3Config.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/entity/Address.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/service/ShipmentService.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/util/ResourceReader.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/controller/MessageReceiver.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/entity/Participant.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/config/AmazonSQSConfig.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/controller/ShipmentController.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/config/DynamoDBConfig.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/config/AWSClientConfig.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/util/FileUtil.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/repository/DynamoDBService.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/ShipmentListDemoApplication.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/buckets/BucketName.java
+/Users/anca/Desktop/java-meetup/testcontainers-shipment-list-cloud-pods/src/main/java/dev/ancaghenade/shipmentlistdemo/repository/S3StorageService.java
