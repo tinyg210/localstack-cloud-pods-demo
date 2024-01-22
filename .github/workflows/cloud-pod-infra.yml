@@ -14,6 +14,8 @@ jobs:
   infrastructure-check:
     name: Setup infrastructure using Terraform
     runs-on: ubuntu-latest
+    env:
+      LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -44,8 +46,6 @@ jobs:
           mvn clean package shade:shade
 
       - name: Start LocalStack
-        env:
-          LOCALSTACK_API_KEY: ${{ secrets.LOCALSTACK_API_KEY }}
         run: |
           docker pull localstack/localstack:latest
           # Start LocalStack in the background
