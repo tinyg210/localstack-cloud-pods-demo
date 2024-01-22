@@ -45,9 +45,12 @@ jobs:
 
       - name: Start LocalStack
         env:
-          LOCALSTACK_AUTH_TOKEN: ${{ secrets.CI_KEY }}
+          LOCALSTACK_API_KEY: ${{ secrets.LOCALSTACK_API_KEY }}
         run: |
-          docker compose up
+          docker pull localstack/localstack:latest
+          # Start LocalStack in the background
+          LS_LOG=trace localstack start -d
+          # Wait 10 seconds for the LocalStack container to become ready before timing out
           echo "Waiting for LocalStack startup..."
           localstack wait -t 10
           echo "Startup complete"
