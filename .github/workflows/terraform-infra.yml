@@ -1,4 +1,4 @@
-name: Create Infra on LocalStack
+name: Create Infra on LocalStack using Terraform
 
 on:
   push:

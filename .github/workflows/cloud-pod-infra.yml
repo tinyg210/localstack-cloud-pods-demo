@@ -1,4 +1,4 @@
-name: Infrastructure Check
+name: Inject State into LocalStack using Cloud Pods
 
 on:
   push:
