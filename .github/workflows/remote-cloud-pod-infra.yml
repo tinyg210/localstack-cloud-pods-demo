@@ -12,7 +12,7 @@ on:
 
 jobs:
   infrastructure-check:
-    name: Setup infrastructure using Terraform
+    name: Setup infrastructure using remote Cloud Pod
     runs-on: ubuntu-latest
     env:
       LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}
@@ -25,25 +25,11 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Set up Maven
-        run: sudo apt-get install -y maven
-
       - name: Install localstack & awslocal
         run: |
           pip install localstack
           pip install terraform-local
           pip install awscli-local
-
-      - name: Build project
-        run: |
-          cd shipment-picture-lambda-validator
-          mvn clean package shade:shade
 
       - name: Start LocalStack
         run: |
