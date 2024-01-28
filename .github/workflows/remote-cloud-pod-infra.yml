@@ -1,4 +1,4 @@
-name: Inject State into LocalStack using local Cloud Pods
+name: Inject State into LocalStack using remote Cloud Pod
 
 on:
   push:
@@ -57,7 +57,7 @@ jobs:
 
       - name: Inject Cloud Pod
         run: |
-          localstack state import my-ci-pod
+          localstack pod load terraform-demo-pod
 
       - name: Check for Bucket
         run: |
