@@ -238,4 +238,3 @@ resource "local_file" "properties_file" {
   filename = "../src/main/resources/buckets.properties"
 }
 
-
