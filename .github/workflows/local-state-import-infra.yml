@@ -1,4 +1,4 @@
-name: Inject State into LocalStack using local Cloud Pod
+name: Inject State into LocalStack using local file
 
 on:
   push:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   infrastructure-check:
-    name: Setup infrastructure using local Cloud Pod
+    name: Inject State into LocalStack using local file
     runs-on: ubuntu-latest
     env:
       LOCALSTACK_AUTH_TOKEN: ${{ secrets.LOCALSTACK_AUTH_TOKEN }}

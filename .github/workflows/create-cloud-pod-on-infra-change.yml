@@ -79,7 +79,7 @@ jobs:
 
       - name: Create Cloud Pod
         run: |
-          localstack pod save project-entire-infrastructure-pod
+          localstack pod save terraform-shipment-pod
 
       - name: Generate a Diagnostic Report
         if: failure()
