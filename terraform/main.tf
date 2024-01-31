@@ -75,7 +75,7 @@ resource "aws_s3_bucket_object" "lambda_code" {
 resource "aws_lambda_function" "shipment_picture_lambda_validator" {
   function_name = "shipment-picture-lambda-validator"
   handler       = "dev.ancaghenade.shipmentpicturelambdavalidator.ServiceHandler::handleRequest"
-  runtime       = "java11"
+  runtime       = "java17"
   role          = aws_iam_role.lambda_exec.arn
   s3_bucket     = aws_s3_bucket.lambda_code_bucket.id
   s3_key        = aws_s3_bucket_object.lambda_code.key
