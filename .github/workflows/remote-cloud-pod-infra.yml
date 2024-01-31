@@ -43,7 +43,7 @@ jobs:
 
       - name: Inject Cloud Pod
         run: |
-          localstack pod load terraform-demo-pod
+          localstack pod load terraform-shipment-pod
 
       - name: Check for Bucket
         run: |
