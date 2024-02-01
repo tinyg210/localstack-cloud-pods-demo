@@ -43,7 +43,7 @@ jobs:
 
       - name: Inject Cloud Pod
         run: |
-          localstack state import my-ci-pod
+          localstack state import terraform-shipment-localstack-state
 
       - name: Check for Bucket
         run: |
